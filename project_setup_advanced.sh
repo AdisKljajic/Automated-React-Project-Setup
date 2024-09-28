@@ -49,7 +49,7 @@ pod install
 cd ..
 
 # Create src folder and necessary directories
-mkdir -p src/assets/{fonts,media,images,theme} src/config src/components/{common,main} src/navigations src/styles src/screens src/constants{actionTypes,routeNames} src/helpers src/utils src/context/{actions,initialStates,reducers}
+mkdir -p src/assets/{fonts,media,images,theme} src/config src/components/{common} src/navigations src/styles src/screens src/constants/{actionTypes,routeNames} src/helpers src/utils src/context/{actions,initialStates,reducers}
 
 # Install React Navigation and its dependencies
 yarn add @react-navigation/native
