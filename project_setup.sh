@@ -108,18 +108,25 @@ else
     echo "No process found on port 8081."
 fi
 
+
 # Start Project
 # Start React Native packager
 echo "Starting React Native packager..."
-npx react-native start --reset-cache
+npx react-native start --reset-cache &
 
 # Give the packager a moment to start
-sleep 10  # Increase the wait time if necessary
+sleep 5  # Adjust the wait time if necessary
 
-# Open in IOS
-i
+# Run on iOS
+npx react-native run-ios &
 
-# Open in Android
-a 
+# Run on Android
+npx react-native run-android &
+
+# Wait for both processes to finish
+wait
+
+# Instructions for further actions
+echo "Both iOS and Android apps should now be running."
 
 echo "Project setup for '$appName' complete! App.js has been created."
