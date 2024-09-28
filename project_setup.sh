@@ -1,3 +1,7 @@
+# Author: Adis Kljajic
+# Date Written: 09/27/2024 
+# React-Native Automation
+
 # How To Run File-- ./setup_project.sh ApplicationName
 # If you get permission denied run the following command:
 # chmod +x setup_project.sh
